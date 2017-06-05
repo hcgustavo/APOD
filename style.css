@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Nasalization;
+  src: url(nasalization-rg.ttf);
+  font-weight:400;
+}
+
+body {
+  padding-top: 70px;
+  background: #fcfcfc;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content {
+  text-align: center;
+}
+
+img {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+
+iframe {
+  margin: auto;
+}
+
+.navbar-inverse {
+  background-color: #04003a;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  font-family: Nasalization;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.jumbotron {
+  background: #ecf0f1;
+}
+
+.panel-info {
+  border-color: #04003a;
+}
+
+.panel-info > .panel-heading {
+  color: white;
+  background-color: #302d51;
+  border-color: #04003a;
+}
+
+.panel-title {
+  font-size: 2em;
+}
+
+.mymodal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.mymodal-hide {
+  display: none; /* Hidden by default */
+}
+
+.mymodal-content-loading {
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 30%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+.mymodal-content-loading img {
+  width: 10%;
+  height: 10%;
+}
