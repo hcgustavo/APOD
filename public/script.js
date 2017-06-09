@@ -26,7 +26,7 @@ function getPicture(url) {
   		contentType : "application/json; charset=utf-8",
   		dataType : "json",
   		success : function(result) {
-        jQuery("#date").text(result.date);
+        jQuery("#date").text(formatDate(result.date));
         jQuery("#title").text(result.title);
         jQuery("#description").text(result.explanation);
         if(result.copyright != undefined) {
@@ -44,4 +44,15 @@ function getPicture(url) {
         console.log("ERROR: " + error);
   		}
   	});
+}
+
+
+function formatDate(dateStr) {
+  var monthStr = ["January", "February", "Mars", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var date = new Date(dateStr + " 00:00:00");
+  var d = date.getDate();
+  var m = date.getMonth();
+  var y = date.getFullYear();
+
+  return monthStr[m] + " " + d + ", " + y;
 }
