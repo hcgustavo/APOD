@@ -6,12 +6,9 @@
 
 body {
   padding-top: 70px;
+  padding-bottom: 10px;
   background: #fcfcfc;
   font-family: 'Roboto Condensed', sans-serif;
-}
-
-.content {
-  text-align: center;
 }
 
 img {
@@ -24,6 +21,15 @@ iframe {
   margin: auto;
 }
 
+h1 {
+  text-shadow: 1px 2px 3px grey;
+}
+
+.content {
+  text-align: center;
+}
+
+
 .navbar-inverse {
   background-color: #04003a;
   border-color: #080808;
@@ -31,6 +37,7 @@ iframe {
 
 .navbar-inverse .navbar-brand {
   color: white;
+  text-shadow: 1px 3px 4px black;
   font-family: Nasalization;
 }
 
