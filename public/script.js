@@ -1,4 +1,4 @@
-var baseUrl = "https://api.nasa.gov/planetary/apod?api_key=Ycpkv3EwBWsNH4XlLt2txwpKSDkUhwyuvulAdZWt";
+var baseUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
 
 // Get today's media
 getPicture(baseUrl);
