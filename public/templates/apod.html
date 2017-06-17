@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="content">
+        <div class="jumbotron">
+          <h1>Astronomy Picture of the Day</h1>
+          <h2>Each day a different image or video of our fascinating universe</h2>
+          <div class="input-group">
+            <input type="text" class="form-control" id="datepicker" placeholder="Pick a date" ng-model="date">
+            <span class="input-group-addon"><a role="button" ng-click="getPicByDate(date)">GO!</a></span>
+          </div>
+        </div>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title"><span id="date"></span> - <span id="title"></span></h3>
+          </div>
+          <div class="panel-body" id="media-container"></div>
+          <div class="panel-footer">
+            <p id="description"></p>
+            <p id="copyright"></p>
+          </div>
+        </div>
+        <span>Developed by <a href="https://www.linkedin.com/in/hcgustavo/" target="_blank">Gustavo Henrique Caixeta</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mymodal mymodal-hide" id="mymodal-loading">
+  <div class="mymodal-content-loading">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h5><strong>Loading data... Please wait</strong></h5>
+        <img src="ajax-loader.gif" alt="">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,17 +1,31 @@
 {
-  "name": "bbinvestimentos-api",
+  "name": "astro-hub",
   "version": "1.0.0",
+  "description": "Each day a different picture of our universe<br>\r https://nasapod.herokuapp.com/",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcgustavo/APOD.git"
+  },
+  "keywords": [
+    "nasa",
+    "astronomy",
+    "astro",
+    "asteroid",
+    "universe"
+  ],
+  "author": "Gustavo Henrique Caixeta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcgustavo/APOD/issues"
+  },
+  "homepage": "https://github.com/hcgustavo/APOD#readme",
   "dependencies": {
-    "babyparse": "^0.4.6",
-    "body-parser": "^1.13.3",
-    "express": "^4.13.3",
-    "jsonwebtoken": "^7.1.9",
-    "mongoose": "~4.2.4",
-    "morgan": "~1.5.0"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
   }
 }

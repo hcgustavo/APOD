@@ -1,0 +1,92 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="content">
+        <div class="jumbotron">
+          <h1>Close Approaches to Earth</h1>
+          <h2>Close approaches to the Earth by NEOs (near-Earth objects)</h2>
+        </div>
+        <div class="panel panel-info cate">
+          <div class="panel-heading">
+            <form class="form-inline">
+              <div class="form-group">
+                <select class="form-control" id="neoDateRange">
+                  <option>Within 2 days</option>
+                  <option>Within 7 days</option>
+                  <option>Within 15 days</option>
+                  <option>Within 30 days</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="neoNominalDist">
+                  <option>Miss distance <= 0.5au</option>
+                  <option>Miss distance <= 0.4au</option>
+                  <option>Miss distance <= 0.3au</option>
+                  <option>Miss distance <= 0.2au</option>
+                  <option>Miss distance <= 0.1au</option>
+                  <option>Miss distance <= 0.05au</option>
+                </select>
+              </div>
+              <button class="btn btn-default">Filter</button>
+            </form>
+          </div>
+          <div class="panel-body">
+            <table class="table table-striped">
+              <thead>
+                <th>Object</th>
+                <th>CA Date</th>
+                <th>Miss distance (au)</th>
+                <th>V relative (Km/s)</th>
+                <th>H (mag)</th>
+                <th>Estimated diameter (m)</th>
+                <th>Potentially hazardous</th>
+              </thead>
+              <tbody>
+                <tr ng-repeat="neo in neos">
+                  <td><a href="{{neo.link}}" target="_blank">{{neo.name}}</a></td>
+                  <td>{{neo.ca_date}}</td>
+                  <td>{{neo.miss_dist}}</td>
+                  <td>{{neo.v_rel}}</td>
+                  <td>{{neo.h}}</td>
+                  <td>{{neo.diameter}}</td>
+                  <td><span class="{{neo.isHazardous ? 'danger-text' : 'success-text'}}">{{neo.isHazardous ? 'Yes' : 'No'}}</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <span>Developed by <a href="https://www.linkedin.com/in/hcgustavo/" target="_blank">Gustavo Henrique Caixeta</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mymodal mymodal-hide" id="mymodal-loading">
+  <div class="mymodal-content-loading">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h5><strong>Loading data... Please wait</strong></h5>
+        <img src="ajax-loader.gif" alt="">
+      </div>
+    </div>
+  </div>
+</div>

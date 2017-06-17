@@ -2,10 +2,6 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var babyParser = require('babyparse');
-var fs = require('fs');
-var morgan = require('morgan');
-
 
 /********** configuration **********/
 var port = process.env.PORT || 8080;
@@ -15,9 +11,7 @@ app.use(bodyParser.json());
 
 app.use(express.static(__dirname + "/public"));
 
-// use morgan to log requests to the console
-app.use(morgan('dev'));
-
 /********** start the server **********/
-app.listen(port);
-console.log('App running at http://localhost:' + port);
+app.listen(port, function() {
+  console.log("APOD server is running...");
+});
