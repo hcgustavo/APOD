@@ -10,18 +10,8 @@ angular.module("astrohub.services", [])
     });
   }
 
-  function formatDate(dateStr) {
-    var monthStr = ["January", "February", "Mars", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var date = new Date(dateStr + " 00:00:00");
-    var d = date.getDate();
-    var m = date.getMonth();
-    var y = date.getFullYear();
-
-    return monthStr[m] + " " + d + ", " + y;
-  }
-
   this.fillHtml = function(apod) {
-    jQuery("#date").text(formatDate(apod.date));
+    jQuery("#date").text(moment(apod.date).format("MMMM DD, YYYY"));
     jQuery("#title").text(apod.title);
     jQuery("#description").text(apod.explanation);
     if(apod.copyright != undefined) {
@@ -64,7 +54,9 @@ angular.module("astrohub.services", [])
               v_rel: v_rel,
               h: h,
               diameter: diameter,
-              isHazardous: isHazardous
+              isHazardous: isHazardous,
+              nameHTML: '<a href="' + link + '" target="_blank">' + name + '</a>',
+              isHazardousHTML: isHazardous ? '<span class="danger-text">' + 'Yes' + '</span>' : '<span class="success-text">' + 'No' + '</span>'
             });
           });
         }

@@ -1,0 +1,170 @@
+@font-face {
+  font-family: Nasalization;
+  src: url(nasalization-rg.ttf);
+  font-weight:400;
+}
+
+body {
+  padding-top: 70px;
+  padding-bottom: 10px;
+  background: #fcfcfc;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+img {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+
+iframe {
+  margin: auto;
+}
+
+h1 {
+  text-shadow: 1px 2px 3px grey;
+}
+
+.content {
+  text-align: center;
+}
+
+
+.navbar-inverse {
+  background-color: #04003a;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  text-shadow: 1px 3px 4px black;
+  font-family: Nasalization;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.jumbotron {
+  background: #ecf0f1;
+}
+
+.panel-info {
+  border-color: #04003a;
+}
+
+.panel-info > .panel-heading {
+  color: white;
+  background-color: #302d51;
+  border-color: #04003a;
+}
+
+.panel-title {
+  font-size: 2em;
+}
+
+.mymodal {
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.mymodal-hide {
+  display: none; /* Hidden by default */
+}
+
+.mymodal-content-loading {
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 30%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+.mymodal-content-loading img {
+  width: 10%;
+  height: 10%;
+}
+
+.input-group {
+  width: 30%;
+  margin: 50px auto -20px auto;
+}
+
+.input-group span {
+  background: #302d51;
+}
+
+.input-group span:hover {
+  background: #04003a;
+}
+
+.input-group a {
+  color: white;
+  text-decoration: none;
+}
+
+.input-group input {
+  text-align: center;
+}
+
+.home {
+  background: blue;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+.cate {
+  border: none;
+}
+
+.cate .panel-heading {
+  background: #ecf0f1;
+  border: none;
+}
+
+.table th {
+  text-align: center;
+}
+
+.success-text {
+  color: #3c763d;
+}
+
+.danger-text {
+  color: #a94442;
+}
+
+.hide-pagination {
+  display: none;
+}
+
+.astrohub-home .jumbotron {
+  text-align: center;
+}
+
+.astrohub-home h1 span {
+  font-family: Nasalization;
+}
+
+.developer {
+  text-align: center;
+}
+
+.astrohub-home img {
+  width: 200px;
+  height: 120px;
+}
+
+.cate-presentation {
+  margin-top: 20px;
+}
+
+.about.content {
+  text-align: left;
+}
