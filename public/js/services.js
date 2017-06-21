@@ -28,7 +28,7 @@ angular.module("astrohub.services", [])
 
 .service("Cate", function($http) {
   this.getNeos = function(filter) {
-    return $http.get("https://api.nasa.gov/neo/rest/v1/feed?start_date=" + filter.startDate + "&end_date=" + filter.endDate +"&api_key=Ycpkv3EwBWsNH4XlLt2txwpKSDkUhwyuvulAdZWt").then(function(response) {
+    return $http.get("https://api.nasa.gov/neo/rest/v1/feed?start_date=" + filter.startDate + "&end_date=" + filter.endDate +"&api_key=DEMO_KEY").then(function(response) {
       var neos = [];
       var data = response.data;
       for(var d = filter.startDate; d <= filter.endDate; d = moment(d).add(1, 'd').format("YYYY-MM-DD")) {
