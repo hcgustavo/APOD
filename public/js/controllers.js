@@ -3,7 +3,7 @@ angular.module("astrohub.controllers", [])
 })
 
 .controller("ApodController", function($scope, Apod) {
-  var baseUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+  var baseUrl = "https://api.nasa.gov/planetary/apod?api_key=Ycpkv3EwBWsNH4XlLt2txwpKSDkUhwyuvulAdZWt";
   jQuery( "#datepicker" ).datepicker({dateFormat: "yy-mm-dd", showButtonPanel: true});
 
   /****************** GET PICTURE OF THE DAY ********************/
