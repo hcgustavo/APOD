@@ -168,3 +168,7 @@ h1 {
 .about.content {
   text-align: left;
 }
+
+.cate .panel-footer {
+  text-align: left;
+}
