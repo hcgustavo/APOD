@@ -1,22 +1,24 @@
-# NASA's Picture of the Day
-Each day a different picture of our universe<br>
-https://nasapod.herokuapp.com/
+# ASTROHUB
+Get to know our universe<br>
+https://astrohub.herokuapp.com/
 
 What it is
 --------------
-**NASA's Picture of the Day** is a website that shows each day a different image or picture of our beautiful universe chosen by
-NASA itself.<br>
-It is also possible to have access to the media archive by choosing a specific date from the date picker input located on the
-center top of the home page.
+**ASTROHUB** is a website developed with the purpose of assembling many different services that provide data about our universe. For now, we have two of them available: APOD and CATE.
+<br>
+The **Astronomy Picture of the Day (APOD)** service gets an image or video of our universe each day, as well as some information on said media. This way, each day you access our website, you will find a different and fascinating picture of our amazing universe and learn a lot about the topic concerning that media.
+<br>
+The **Close Approaches to Earth (CATE)** service provides data on asteroids that are coming close to our planet. You can filter them by date range (from two days up to one week), distance to Earth and also visualize many information like diameter, magnitude and even if an asteroid is a potential danger. 
 
 How it works
 --------------
-The website uses an API called APOD (Astronomy Picture of the Day) provided by NASA to get the media data.<br>
-By making a HTTP request, the website gets as response, in JSON format, some information on the media like: url of the media,
-description, title, type and copyright information.<br>
-To know more about the APOD API, please NASA's Open APIs website: https://api.nasa.gov/api.html#apod
+This website uses APIs provided by NASA to get all the data for the APOD and CATE services. They are free to use and available to everybody who wishes to develop their own applications.
+<br>
+We use the APOD API for the APOD service, and the NeoWS web service for the CATE service.
+<br>
+For more information on these APIs, as well as for others that might interest you, please check NASA's Open APIs website at: api.nasa.gov 
 
 Development
 --------------
-**NASA's Picture of the Day** was developed in HTML5 and Javascript, using Bootstrap and jQuery for most of the front-end design
+**ASTROHUB** was developed in HTML5 and Javascript, using Bootstrap, jQuery and AngularJS for most of the front-end design
 and programming of the functionality.
